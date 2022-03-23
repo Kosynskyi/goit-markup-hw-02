@@ -45,7 +45,7 @@ body {
 .span-footer {
   color: var(--bg-white-color);
 }
-.navigation {
+.navigation .link {
   font-weight: 500;
   line-height: 1.14;
   color: var(--title-text-color);
@@ -54,18 +54,13 @@ body {
   color: var(--accent-color);
   text-decoration: none;
 }
-/* [href$="html"] {
-  color: var(--accent-color);
-} */
-
-/* .list.link:first-child {
-  color: var(--accent-color);
-} */
 
 .link:hover,
 .link:focus,
-.contacts:hover,
-.contacts:focus {
+.contacts-header:hover,
+.contacts-header:focus,
+.contacts-footer:hover,
+.contacts-footer:focus {
   color: var(--accent-color);
 }
 .map:hover,
@@ -87,10 +82,16 @@ body {
 .contacts {
   font-weight: 500;
   line-height: 1.14;
+}
+.contacts-header {
   color: var(--primary-text-color);
 }
+.contacts-footer {
+  color: rgba(255, 255, 255, 0.6);
+}
 .link,
-.contacts {
+.contacts-header,
+.contacts-footer {
   text-decoration: none;
 }
 .main-title {
@@ -158,11 +159,12 @@ body {
 .address {
   background: #2f303a;
   font-style: normal;
-}
-.address .link {
-  color: rgba(255, 255, 255, 0.6);
   line-height: 1.17;
 }
+/* .address .link {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.17;
+} */
 .map {
   color: var(--bg-white-color);
   text-decoration: none;
